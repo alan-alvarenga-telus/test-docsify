@@ -1,5 +1,7 @@
 # Technical documentation
 
+some technical information to search
+
 ```plantuml
 @startuml
 start

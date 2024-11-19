@@ -28,17 +28,17 @@
           },
         ],
         loadSidebar: true,
+        subMaxLevel: 3,
         search: "auto", // default
         search: [
           "/", // => /README.md
-          "/guide", // => /guide.md
-          "/get-started", // => /get-started.md
-          "/zh-cn/", // => /zh-cn/README.md
+          "/activity-diagram", // => /guide.md
+          "/tab-content", // => /get-started.md
         ],
         // complete configuration parameters
         search: {
           maxAge: 86400000, // Expiration time, the default one day
-          paths: [], // or 'auto'
+          paths: "auto", // or 'auto'
           placeholder: "Type to search",
           // Localization
           placeholder: {
@@ -52,7 +52,7 @@
           },
 
           // Headline depth, 1 - 6
-          depth: 2,
+          depth: 3,
 
           hideOtherSidebarContent: false, // whether or not to hide other sidebar content
         },
@@ -69,5 +69,7 @@
     <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
     <script src="//unpkg.com/docsify-pagination/dist/docsify-pagination.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/docsify-tabs@1.6.0/dist/docsify-tabs.min.js"></script>
+    <script src="https://unpkg.com/@markbattistella/docsify-autoheaders@latest"></script>
   </body>
 </html>
